@@ -1,4 +1,4 @@
-Dev_startup
+START_UP launcher core
 ===========
 
 Программа в режиме alpha 
