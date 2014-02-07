@@ -5,7 +5,7 @@ program_name = 'startup_tools'  # program name, and name dir
 print 'START_UP core'
 import time
 time.sleep(1)
-version = '0.1 test alpha'
+version = '0.2 test alpha'
 version_startup = 'mkfir_5 dev inc v.alpha ; python Python 2.7.5 LLVM 5.0'
 name = raw_input("What is your name? ")
 print "Hello there, " + name + "!"
@@ -63,18 +63,30 @@ pass
 os.system('clear')
 print 'ERROR! PROGRAM IS NOT DONE!'
 print 'https://github.com/Markus-dev/Dev_startup/tree/master/Markus_le/Test_dev/START_UP'
-print 'Wait for relise'
+print 'Wait for relies'
 cn = raw_input("Connect? ")
 pass
 # end error
-#create dirs
+
+# start install
 print 'start install'
+dirpath = os.path.realpath(os.path.dirname(sys.argv[0]))  # dir framer
 time.sleep(0.5)
-print "create dir " + program_name + ""
-import os
-print os.path.realpath(os.path.dirname(sys.argv[0]))
-dirpath = os.path.realpath(os.path.dirname(sys.argv[0]))
-os.makedirs("" + dirpath + "/startup_tools")
-
-
+# create dirs
+pass
+if os.path.exists("" + dirpath + "/" + program_name + ""):
+    if os.path.exists("" + dirpath + "/" + program_name + ""):
+        print "dir " + program_name + " up already create"
+else:
+        print "create dir " + program_name + ""
+        import os
+        pass
+        print os.path.realpath(os.path.dirname(sys.argv[0]))
+        import os
+        pass
+        os.makedirs("" + dirpath + "/" + program_name + "")
+pass
+# end create dirs
+time.sleep(0.5)
+print 'abort! close program'
 
