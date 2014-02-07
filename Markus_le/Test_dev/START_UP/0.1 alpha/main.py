@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 os.system('clear')
+program_name = 'startup_tools'  # program name, and name dir
 print 'START_UP core'
 import time
 time.sleep(1)
@@ -53,10 +54,7 @@ time.sleep(0.5)
 print 'get cwd'
 time.sleep(1)
 print os.getcwd()
-print 'create floder'
 time.sleep(0.5)
-
-#dir create
 
 pass
 
@@ -69,7 +67,15 @@ print 'Wait for relise'
 cn = raw_input("Connect? ")
 pass
 # end error
-print 'connect is not done ERROR'
+
+#create dirs
+print 'start install'
+time.sleep(0.5)
+print "create dir " + program_name + ""
+import os
+print os.path.realpath(os.path.dirname(sys.argv[0]))
+dirpath = os.path.realpath(os.path.dirname(sys.argv[0]))
+os.makedirs("" + dirpath + "/startup_tools")
 
 
 
